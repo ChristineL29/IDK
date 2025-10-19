@@ -1,0 +1,27 @@
+public class MG10C5HWQ1 {
+  public static void main(String[] args) {
+    int[] values = {1, 5, 10, 25};
+    for(int p=0; p<=10; p++){
+      for(int n=0; n<=10; n++){
+        for(int d=0; d<=10; d++){
+          for(int q=0; q<=10; q++){
+            int totalC = p+n+d+q;
+            if(totalC == 0) continue;
+            int totalV = p*1+n*5+n*10+q*25;
+            if(totalV*1.0/totalC == 20){
+              int newTV = totalV + 25;
+              int newTC = totalC + 1;
+              if(newTV*1.0/newTC == 21){
+                System.out.println("P = "+p);
+                System.out.println("N = "+n);
+                System.out.println("D = "+d);
+                System.out.println("Q = "+q);
+                System.out.println("Total #coins = "+ totalC);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
